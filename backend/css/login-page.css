@@ -1,0 +1,145 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background: url("https://img.freepik.com/premium-photo/living-room-interior-with-plant_258219-199.jpg?w=826");
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 5s linear infinite;
+}
+@keyframes aniamteBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(241, 235, 235, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+
+}
+
+h2 {
+    font-size: 2em;
+    color: rgb(20, 20, 20);
+    text-align: center
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+
+    margin: 50px 0;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    
+}
+
+.input-box label{
+    position: absolute;
+    top:30%;
+    left:5px;
+    transform:translativY(-30%);
+    font-size: 1em;
+    color:rgb(10, 10, 10);
+    pointer-events:none;
+    transition:3s; 
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -6px;
+}
+.input-box input{
+    width:100%;
+    height:50px;
+    background:transparent;
+    border:none;
+    outline:none;
+    font-size:1em;
+    color: rgb(8, 8, 8);
+    padding:0 35px 0 5px;
+
+}
+
+.input-box  .icon{
+    position: absolute;
+    right:8px;
+    color:rgb(8, 8, 8);
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+
+
+button{
+     width:100%;
+     height:40px;
+     background:rgb(7, 7, 7);
+     text-align: center;
+     margin-right: -60px;
+     border: none;
+     outline: none;
+     border-radius: 40px;
+     cursor:pointer;
+     font-size:1em;
+     color:rgb(245, 241, 241);
+     font-weight: 500;
+
+}
+
+.Reister-link{
+    font-size:.9em;
+    color:rgb(13, 14, 13);
+    text-align: center;
+    margin: 50px 30 20px;
+}
+
+.Register-link p{
+    margin-right:-250px;
+    text-align: center;
+}
+.Reister-link p a{
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    margin-left:-250px;
+
+}
+
+.Reister-link p a:hover{
+    text-decoration: underline;
+}
+
+
+ @media(max-width:360px) {
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px; */
+     }
+    
+}
